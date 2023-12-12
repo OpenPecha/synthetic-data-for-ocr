@@ -18,7 +18,7 @@ class SyntheticImageGenerator:
 
     def __init__(self, image_width, image_height, font_size=24, font_type="Uchen") -> None:
         self.image_width = image_width
-        self.iamge_height = image_height
+        self.image_height = image_height
         self.font_size = font_size
         self.font_type = font_type
 
@@ -32,7 +32,7 @@ class SyntheticImageGenerator:
 
     def save_image(self, text, img_file_name):
         font_file_name = FONT_PATHS.get(self.font_type, 'Uchen')
-        img = Image.new('RGB', (self.image_width,self.iamge_height), color = (255, 255, 255))
+        img = Image.new('RGB', (self.image_width,self.image_height), color = (255, 255, 255))
         d = ImageDraw.Draw(img)
 
         # Define font and text color
